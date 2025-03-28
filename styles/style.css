@@ -148,7 +148,7 @@
 
   button:focus {
     outline: none;
-    box-shadow: 2px 2px 0 #000000;
+    box-shadow: none;
   }
 
   button:focus-visible {
@@ -168,14 +168,14 @@
     background-color: var( --button-background-color);
   }
   
-  .card__icon-button:focus-visible {
-    outline: var(--element-border, solid 2px #000);
-    outline: none;
-  }
-  
   .card__icon-button:focus {
     outline: none;
     box-shadow: none;
+  }
+  
+  .card__icon-button:focus-visible {
+    outline: var(--element-border, solid 2px #000000);
+    outline: none;
   }
   
   .card__like-button {
