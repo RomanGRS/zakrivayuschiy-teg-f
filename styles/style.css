@@ -133,6 +133,7 @@
   .card__buttons_wrapper {
     display: flex;
     margin-inline: auto 0;
+    gap: 5px;
   }
   
   button {
@@ -140,6 +141,8 @@
     overflow: hidden;
     transition: box-shadow 0.3s ease;
     background-color: var(--button-background-color, #ffffff);
+    outline: 2px solid transparent;
+    transition: outline 0.3s linear;
   }
 
   button:hover {
@@ -156,25 +159,21 @@
   }
   
   .card__icon-button {
-    border: 2px solid var( --button-background-color);
-    padding: 3px 7px 0 0;
-    transition: border-color 0.3s ease;
-    cursor: pointer;
-    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    border: 2px solid transparent;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 38px;
-    background-color: var( --button-background-color);
   }
   
   .card__icon-button:focus {
-    outline: none;
     box-shadow: none;
+    outline: 2px solid #000000;
   }
   
   .card__icon-button:focus-visible {
-    outline: var(--element-border, solid 2px #000000);
+    border-color: var(--element-border, solid 2px #000000);
     outline: none;
   }
   
